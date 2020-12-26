@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import Block from './components/Block.vue'
-import Results from './components/Results.vue'
+import Block from './components/Block.vue' /** remember, we have to import to main or root component */
+import Results from './components/Results.vue' /** ditto */
 export default {
   name: 'App',
-  components: { Block, Results },
+  components: { Block, Results }, //? Gotta export the components to main.js which is then mounted to index.html */
   data() {
     return {
       isPlaying: false,
